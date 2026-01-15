@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>SWASTI REALCON</span> </h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">BUY</a></li>
+            <li class="city-menu">
+                <a href="javascript:void(0)" onclick="toggleCityMenu()">CITY ▾</a>
+              
+             
+              </li>
+              
+            <li><a href="#services" data-after="Service">RENT</a></li>
+             <li><a href="#about" data-after="About">SERVICE</a></li>
+             <li><a href="#management" data-after="Management">MANAGEMENT</a></li>
+
+             
+            <li><a href="https://priyansuraja.github.io/contact-form/" data-after="Contact"><span>contact us</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        
+        <h2> <span></span></h2>
+      
+        
+        
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+
+
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">We Will Help You</h1>
+        <p> Take your bussiness online;create your presence on various online platforms like google,facebook,twitter,instagram<br> etc. We will launch your innovative products and serivces ,help you gain an edge over your competitors inn digital world.</p>
+      </div>
+
+
+      <!-- Management Section -->
+<section id="management">
+  <div class="management-container">
+    <h1 class="section-title">Board of Directors</h1>
+
+    <div class="management-grid">
+
+      <div class="management-card">
+        <img src="images/director2.jpg" alt="Director">
+        <h3>Smrutirekha Priyadarshini</h3>
+        <p>Managing Director & CEO</p>
+      </div>
+
+      <div class="management-card">
+        <img src="images/director1.jpg" alt="Director">
+        <h3>Seshadeva Barika</h3>
+        <p>Executive Director</p>
+      </div>
+
+      <div class="management-card">
+        <img src="images/director3.jpg" alt="Director">
+        <h3>Jane Smith</h3>
+        <p>Independent Director</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Management Section -->
+<script src="./app.js"></script>
+
+<!-- Chatbot Widget -->
+<div class="chatbot-popup" id="chatbotPopup">
+  <button class="chatbot-close" onclick="closeChatbot()">×</button>
+
+  <div class="chatbot-content">
+    <div class="chatbot-avatar">
+      <img src="images/bot.png" alt="Chatbot">
+    </div>
+
+    <div class="chatbot-text">
+      <h3>👋 Hey there!</h3>
+      <p>We are here to help?</p>
+    </div>
+
+    <button class="chatbot-btn" onclick="openChat()">Start Chat</button>
+  </div>
+</div>
+
+
+</body>
+
+</html>
