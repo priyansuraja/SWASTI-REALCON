@@ -1284,8 +1284,169 @@ p {
   }
 
 
+  /* ================= GLOBAL FIXES ================= */
+
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+  }
   
+  .container {
+	min-height: auto;
+  }
   
+  /* Consistent section spacing */
+  section {
+	padding: 80px 0;
+  }
   
+  /* Title scaling fix */
+  .section-title {
+	font-size: clamp(2.4rem, 5vw, 4rem);
+	margin-bottom: 40px;
+  }
   
+  /* ================= HEADER MOBILE FIX ================= */
+  @media (max-width: 768px) {
+	#header .nav-list ul {
+	  padding-top: 80px;
+	}
+  }
+  
+  /* ================= HERO RESPONSIVE ================= */
+  @media (max-width: 768px) {
+	.hero-content h1 {
+	  font-size: 2.8rem;
+	}
+	.hero-content p {
+	  font-size: 1.5rem;
+	}
+  }
+  
+  /* ================= SERVICES CARD FIX ================= */
+  @media (max-width: 768px) {
+	.services-card {
+	  padding: 40px 20px;
+	  margin: 0 15px;
+	}
+  }
+  
+  /* ================= PROPERTIES GRID FIX ================= */
+  .property-grid {
+	max-width: 1200px;
+	margin: auto;
+  }
+  
+  @media (max-width: 900px) {
+	.property-grid {
+	  grid-template-columns: repeat(2, 1fr);
+	  gap: 25px;
+	}
+  }
+  
+  @media (max-width: 600px) {
+	.property-grid {
+	  grid-template-columns: 1fr;
+	}
+  }
+  
+  /* ================= MANAGEMENT FIX ================= */
+  .management-container {
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 20px;
+  }
+  
+  /* ================= EMI FIX ================= */
+  @media (max-width: 768px) {
+	.emi-box {
+	  padding: 25px;
+	}
+  }
+  
+  /* ================= TESTIMONIAL FIX ================= */
+  @media (max-width: 768px) {
+	.testimonial-card {
+	  padding: 22px;
+	}
+  }
+  
+  /* ================= FOOTER PERFECT FIX ================= */
+  #footer {
+	padding-top: 60px;
+  }
+  
+  .footer-container {
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	padding: 50px 20px;
+  }
+  
+  .footer-col {
+	text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+	.footer-col {
+	  text-align: center;
+	}
+  }
+  
+  /* ================= BUTTON CONSISTENCY ================= */
+  .property-card button,
+  .emi-box button,
+  .hero-btn {
+	transition: 0.3s ease;
+  }
+  
+  .property-card button:hover,
+  .emi-box button:hover,
+  .hero-btn:hover {
+	transform: translateY(-3px);
+	opacity: 0.9;
+  }
+  
+  /* ===== PROPERTIES LAYOUT FIX ===== */
+
+.properties-inner {
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 20px;
+	text-align: center;
+  }
+  
+  /* Grid balance */
+  .property-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 35px;
+	margin-top: 50px;
+  }
+  
+  /* Desktop */
+  @media (min-width: 1200px) {
+	.property-grid {
+	  grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+  }
+  
+  /* Tablet */
+  @media (max-width: 900px) {
+	.property-grid {
+	  grid-template-columns: repeat(2, 1fr);
+	}
+  }
+  
+  /* Mobile */
+  @media (max-width: 600px) {
+	.property-grid {
+	  grid-template-columns: 1fr;
+	}
+  }
+  
+  /* Center filters properly */
+  .city-filters {
+	justify-content: center;
+  }
+  
+
   
