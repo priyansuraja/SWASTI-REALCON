@@ -81,7 +81,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
+    padding: 10px 20px;
     transition: background 0.3s;
 }
 
@@ -1583,6 +1583,7 @@ html, body {
   
 
   
+
 
 
 
