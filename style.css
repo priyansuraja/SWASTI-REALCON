@@ -570,6 +570,32 @@ p {
 		font-size: 7rem;
 	}
 	/* End Hero */
+	/* Remove extra padding/margin for mobile hero */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px; /* smaller padding */
+    }
+
+    /* Make hero video go under the navbar without gap */
+    #hero {
+        margin-top: 0; /* remove any top margin */
+        height: 100vh; /* full viewport height */
+    }
+
+    #hero video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* keeps video full background */
+    }
+
+    .hero-content {
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 20px;
+        text-align: center;
+    }
+}
+
 
 	/* Services Section */
 	#services .service-bottom .service-item {
@@ -1557,6 +1583,7 @@ html, body {
   
 
   
+
 
 
 
