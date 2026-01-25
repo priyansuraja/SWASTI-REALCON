@@ -1573,6 +1573,143 @@ html, body {
 	  font-size: 1rem;
 	}
   }
+/* RESET GAP ISSUE */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;      /* 🔥 IMPORTANT */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+/* LOGO */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #91ff00;
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav-links a,
+.dropbtn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links a:hover,
+.dropbtn:hover {
+  color: #91ff00;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #000;
+  border-radius: 6px;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  color: #fff;
+}
+
+.dropdown-content a:hover {
+  background: #91ff00;
+  color: #000;
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+/* ANIMATION */
+.hamburger.toggle span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.toggle span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.toggle span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 75%;
+    height: calc(100vh - 70px);
+    background: #000;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .dropdown-content {
+    position: static;
+    background: none;
+  }
+
+  .dropdown-content a {
+    text-align: center;
+  }
+}
+
   
 
 
@@ -1583,6 +1720,7 @@ html, body {
   
 
   
+
 
 
 
