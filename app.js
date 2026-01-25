@@ -1,6 +1,6 @@
 /* ================= NAVBAR / HAMBURGER MENU ================= */
 
-const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 const header = document.querySelector('.header.container');
@@ -102,10 +102,26 @@ function sendPropertyLead(city, area, price) {
 	document.getElementById("emi-result").innerText =
 	  "Monthly EMI: ₹ " + emi.toFixed(0);
   }
-  
+
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const dropdown = document.querySelector('.dropdown');
+const dropbtn = document.querySelector('.dropbtn');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active'); // mobile menu slide
+    hamburger.classList.toggle('toggle'); // animate hamburger
+});
+
+// Dropdown toggle on mobile
+dropbtn.addEventListener('click', () => {
+    dropdown.classList.toggle('active');
+});
+
   
 
 
 
   
+
 
